@@ -1,0 +1,6 @@
+framework module Pods_MYXTests {
+  umbrella header "Pods-MYXTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

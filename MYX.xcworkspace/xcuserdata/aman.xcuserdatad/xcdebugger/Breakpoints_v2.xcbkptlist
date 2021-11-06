@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D73CF88B-806C-4880-B175-4F7ECE78D8C5"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C734261-784B-4F6E-911D-8919D45156AB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MYX/View Controllers/HomeScreen/ObjectivesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "filterDataInWeeks()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01891D45-3463-408E-B57B-20E681F76F91"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MYX/View Controllers/HomeScreen/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "fetchLimitedMonthData(isSIxty:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "01891D45-3463-408E-B57B-20E681F76F91 - 762a3d4c1f496216"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;MYX.WeekData&gt;) -&gt; () in MYX.HomeViewController.fetchLimitedMonthData(isSIxty: Swift.Bool) -&gt; ()"
+                  moduleName = "MYX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aman/Documents/New%20Projects/MYX%20App/MYX/MYX/View%20Controllers/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "301"
+                  endingLineNumber = "301"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "01891D45-3463-408E-B57B-20E681F76F91 - bab1fb85342e07f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Array&lt;MYX.WeekData&gt;) -&gt; () in MYX.HomeViewController.fetchLimitedMonthData(isSIxty: Swift.Bool) -&gt; ()"
+                  moduleName = "MYX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aman/Documents/New%20Projects/MYX%20App/MYX/MYX/View%20Controllers/HomeScreen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "38">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E1EC2EF-F984-4219-B432-ABCE6372F88E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MYX/View Controllers/HomeScreen/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "setGraph()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
