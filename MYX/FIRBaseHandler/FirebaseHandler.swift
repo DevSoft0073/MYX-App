@@ -221,6 +221,17 @@ class FIRController : NSObject{
     }
    
     
+    func deleteGame(data : GameModel, completionBlock : @escaping ((_ msg : String?) -> Void)){
+        let db = Firestore.firestore()
+
+        db.collection("Objectives").document(UserManager.shared.userId!).collection("Data").document(data.gameID).delete { (err) in
+            if err == nil{
+                completionBlock("done")
+            }
+        }
+    }
+   
+    
    
     
     
@@ -254,7 +265,7 @@ class FIRController : NSObject{
             var weekWiseModelData : [WeekData] = [WeekData]()
             weekWiseModelData.removeAll()
                 
-        db.getDocuments { (snapshot, err) in
+        db.order(by: "TimeStamp").getDocuments { (snapshot, err) in
             if err == nil{
                 for data in snapshot!.documents{
                     weekWiseModelData.append(WeekData(dataDict: data.data()))

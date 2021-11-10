@@ -82,4 +82,28 @@ extension AddPointsViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let closeAction = UIContextualAction(style: .normal, title:  "Delete", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            displayALertWithTitles(title: "", message: "Are you sure want to delete this objective?", ["Yes","No"]) { (index) in
+                if index == 0{
+                    let data = self.totalGames[indexPath.row]
+                    self.firebaseControllerHandle.deleteGame(data: data) { (msg) in
+                        print("deleted")
+                    }
+                }
+            }
+            success(true)
+        })
+        closeAction.image = UIImage(named: "delete")
+        closeAction.backgroundColor = .systemRed
+        
+        return UISwipeActionsConfiguration(actions: [closeAction])
+
+    }
+    
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        true
+    }
 }
